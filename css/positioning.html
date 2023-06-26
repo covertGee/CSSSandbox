@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        body{
+            height: 400px;
+        }
+
+        .box{
+            width: 500px;
+            height: 500px;
+            background: #c4c4c4;
+        }
+
+        #box-1{
+            background-color: aquamarine;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 1; /* if you use a negetive z-index the background will move behind */
+
+            /* the z-index propertyspecifies the stack order of an element.
+            
+            An element with greater stack order in front oof the element with a lower stack order.
+            
+            Note : z-index only works on potitioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items(elements that are dirct children of display: flex elements).
+            
+            note: if two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.
+            
+            The z-index is used to move an element one more step behind or one step closer */
+        }
+
+        #box-2{
+            background-color: rgb(225, 223, 127);
+            top: 100px;
+            left: 100px;
+            position: absolute;
+        }
+
+        #box-3{
+            background-color: rgb(13, 167, 233);
+            bottom: 100px;
+            right: 100px;
+            position: absolute;
+        }
+
+        #box-4{
+            background-color: rgb(114, 3, 224);
+            position: fixed;
+            bottom: 1%;
+        }
+        #box-5{
+            background-color: rgb(15, 194, 24);
+            position: sticky;
+            top: 0;
+            z-index: -1;
+        }
+      </style>
+    </head>
+    <body>
+        <div id="box-1" class="box"></div>
+        <div class="container">
+            <div id="box-2" class="box"></div>
+            <div id="box-3" class="box"></div>
+        </div>
+        <div id="box-4" class="box"></div>
+        <div id="box-5" class="box"></div>
+    </body>
+    </html>

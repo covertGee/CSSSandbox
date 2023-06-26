@@ -1,0 +1,33 @@
+p{font-size: 22px;}
+
+#about p{}
+
+#services,
+#about{
+    border: 1px solid chocolate;
+    padding: 20px;
+    background-color: darkgray;
+}
+
+
+.service,{
+    font-size: 22px;}
+
+/* Multiple select using ID */
+#services,
+#about{
+    border: 1px solid #333;
+    padding: 20px;
+    background-color: #c4c4c4;
+}
+
+/* class selector */
+.services{
+    font-size: 40px;
+}
+
+/* Nested selector */
+#services p{
+    font-size: 50px;
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-modal/box-sizing</title>
+    <style>
+
+        
+       @import 
+       url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  
+       :root{
+        --padding: 10px 20px;
+        --margin: 20px;
+        --border: 2px solid #333;
+        --width: 600px;
+        --font: 2rem;
+       }
+
+       *{ 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        /* Adding the box-sizing to remove the width that is added to the padding*/
+
+       * body{
+        font-family: 'Roboto',sans-serif;
+       }
+
+       .box{
+        background: #c4c4c4;
+        border: 2px solid #3333 ;
+        width: 500px;
+        padding: 10px 20px;
+
+        /* adding padding on all sides(applying padding with a single value) */
+        /* padding : 50px !important; */
+
+        /* padding per side */
+
+        /* padding shorthand = top, right, bottom, left */
+        /* padding : 10px 20px 10px 20px; */
+
+        /* padding shorthand = top/bottom left/right */
+        padding: 10px 20px;
+
+        /* adding margin on all sides */
+        margin: 10px;
+
+        /* the same thing in padding is apply to margin */
+       }
+
+       .home h1{
+        /* display:none; */
+        /* visibility: collapse; */
+        padding-bottom: 20px;
+       }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>home</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      Aut similique, quam commodi quasi dolor dolorum id ratione animi. 
+      Veniam quisquam unde laboriosam libero. 
+      Iste repudiandae doloribus suscipit esse dolor voluptate.</p>
+  </div>
+  <div class="box">
+    <h2>home</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Omnis accusamus maiores nobis laudantium, 
+      praesentium, saepe tempora rem recusandae, 
+      adipisci eos magni nemo suscipit laboriosam 
+      officiis error temporibus in aspernatur autem.</p>
+  </div>
+    
+</body>
+</html>
